@@ -20,7 +20,7 @@ public class PaymentCalc {
         //Imprima na tela as informações, dispostas conforme o exemplo abaixo. No exemplo o valor da hora é 5 e a quantidade de hora é 220.
 
     public static void main(String[] args) {
-        String salario = JOptionPane.showInputDialog("Digite o salário do usuário");   
+        String salario = JOptionPane.showInputDialog("Digite o salário por hora do usuário");   
         String horas = JOptionPane.showInputDialog("Digite as horas trabalhadas do usuário");         
         Pessoa pessoa = new Pessoa();
         pessoa.setSalarioHora(Double.parseDouble(salario));
