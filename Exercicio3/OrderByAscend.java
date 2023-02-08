@@ -4,34 +4,30 @@ import java.util.Scanner;
 import javax.swing.JOptionPane;
 
 public class OrderByAscend {
-    // Crie uma classe e no método principal e solicite uma idade. Em seguida,
-    // apresente uma mensagem informando se é criança, adolescente, adulto ou idoso.
-    // Defina os intervalos de valores para classificar a idade entre essas
-    // categorias. O valor deverá ser solicitado ao usuário utilizando um
-    // JoptionPane.showInputDialog. Criar uma classe para a pessoa.
+    // Implemente uma classe que deverá, quando executada, solicitar 03 valores separados por 
+    // vírgula e apresentar esses valores em ordem crescente. A ordenação dos valores deverá 
+    // ser feita em um método separado, sem utilizar qualquer mecanismo da linguagem de programação.
+
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Digite uma idade:");
+        String valores = JOptionPane.showInputDialog("Digite três valores separados por virgula:");      
+        String[] arrayValores = OrdenarValores(valores);
 
-        if (Integer.parseInt(sc.next()) < 1) {
-            System.out.println("Idades devem ser no minímo maiores que 0, por favor");
-            System.out.print("Digite uma idade:");
+        JOptionPane.showMessageDialog(null, (arrayValores[0] + "," + arrayValores[1] + "," + arrayValores[2]));
+    }
+
+     public static String[] OrdenarValores(String valores){
+        String[] arrayValores = valores.split(",", 3);
+
+        int i = 1;
+        while(i<arrayValores.length){
+            if (Integer.parseInt(arrayValores[i-1]) > Integer.parseInt(arrayValores[i])){
+                String valorBkp = arrayValores[i-1];
+                arrayValores[i-1] = arrayValores[i];
+                arrayValores[i] = valorBkp;
+            }
+            i++;
         }
-
-        String identificacao = "";
-        Integer idade = Integer.parseInt(sc.next());
-
-        if (idade <= 12) {
-            identificacao = "Criança";
-        } else if (idade <= 18) {
-            identificacao = "Adolescente";
-        } else if (idade < 60) {
-            identificacao = "Adulto";
-        } else {
-            identificacao = "Idoso";
-        }
-
-        JOptionPane.showMessageDialog(null,"A idade que você digitou é referente a de um ser humano " + identificacao);
+        return arrayValores;
     }
 }
