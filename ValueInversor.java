@@ -10,11 +10,11 @@ public class ValueInversor {
 
     public static void main(String[] args) {
 
-        String valores = JOptionPane.showInputDialog("Digite dois valores separados por vírgula:");      
+        String valores = JOptionPane.showInputDialog("Digite dois valores separados por virgula:");      
 
-        InverterValores(valores);
+        String[] arrayValores = InverterValores(valores);
 
-       
+        System.out.println(arrayValores[1] + "," + arrayValores[0]);
     }
 
     public static String[] InverterValores(String valores){
