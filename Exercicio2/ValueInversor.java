@@ -1,3 +1,4 @@
+package Exercicio2;
 import java.util.Scanner;
 
 import javax.swing.JOptionPane;
@@ -14,7 +15,7 @@ public class ValueInversor {
 
         String[] arrayValores = InverterValores(valores);
 
-        System.out.println(arrayValores[1] + "," + arrayValores[0]);
+       JOptionPane.showMessageDialog(null, (arrayValores[1] + "," + arrayValores[0]));
     }
 
     public static String[] InverterValores(String valores){

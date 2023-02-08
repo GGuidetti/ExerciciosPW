@@ -1,6 +1,9 @@
+package Exercicio3;
 import java.util.Scanner;
 
-public class AgeIdentificator {
+import javax.swing.JOptionPane;
+
+public class OrderByAscend {
     // Crie uma classe e no método principal e solicite uma idade. Em seguida,
     // apresente uma mensagem informando se é criança, adolescente, adulto ou idoso.
     // Defina os intervalos de valores para classificar a idade entre essas
@@ -29,6 +32,6 @@ public class AgeIdentificator {
             identificacao = "Idoso";
         }
 
-        System.out.println("A idade que você digitou é referente a de um ser humano " + identificacao);
+        JOptionPane.showMessageDialog(null,"A idade que você digitou é referente a de um ser humano " + identificacao);
     }
 }
