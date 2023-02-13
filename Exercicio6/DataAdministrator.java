@@ -73,7 +73,7 @@ static List<Endereco> enderecolista = new ArrayList<Endereco>();
             selectedUser,
             selectedUser[0]);
         
-        clientelista.get(n).setEnderecos(endereco);
+        
         Gerenciar();
     }
      
