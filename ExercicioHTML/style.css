@@ -1,0 +1,50 @@
+.header{
+    background-color: #06cc8a;
+    
+}
+
+.title{
+    font-size: 280%;
+    color: white;
+    text-align: center;
+    opacity: 80%;
+    padding: 8vw;
+    font-weight: 600;
+}
+
+.mainText{
+    font-size: 2vw;
+    text-align: center;
+    margin: 0vw 35vw;
+    padding: 3vw 4vw 2vw;
+}
+
+.mainSub{
+    font-size: 14px;
+    text-align: center;
+    margin: 0px 33vw;
+    padding-bottom: 2vw;
+}
+
+.mainBlock{
+    top: -0.7vw;
+    position: relative;
+    background-color: rgb(0 0 0 / 5%);
+}
+
+.inputBlock{
+    position: relative;
+    background-color: #06cc8a45;
+    width: 100%;
+    padding: 10vw;
+    display: block;
+    top: -1vw;
+}
+
+.btn {
+    border: 0;
+    width: 20vw;
+    border-radius: 10px;
+    background-color: #adb5bd;
+    height: 4vw;
+}
